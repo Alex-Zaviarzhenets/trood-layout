@@ -1,0 +1,15 @@
+:root {
+  --font-family: "Aeroport Regular", sans-serif;
+  --bg-color-1: #f3f4f6;
+  --bg-color-2: #c2c5cb;
+  --bg-color-3: #D1D2D6;
+  --bg-color-4: #DBE3E1;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+main {
+  background-color: var(--bg-color-1);
+}

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Aeroport Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aeroport Regular'), url('Aeroport-regular-trial.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aeroport Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aeroport Medium'), url('Aeroport-medium-trial.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aeroport Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aeroport Bold'), url('Aeroport-bold-trial.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aeroport Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aeroport Black'), url('Aeroport-black.woff') format('woff');
+}
