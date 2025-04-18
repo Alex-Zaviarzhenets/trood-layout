@@ -1,18 +1,35 @@
+
 :root {
-  --font-family: "Aeroport Regular", sans-serif;
+  --font-regular: "Aeroport Regular", sans-serif;
+  --font-medium: "Aeroport Medium", sans-serif;
+  --font-bold: "Aeroport Bold", sans-serif;
+  --font-black: "Aeroport Black", sans-serif;
   --bg-color-1: #f3f4f6;
   --bg-color-2: #c2c5cb;
   --bg-color-3: #D1D2D6;
   --bg-color-4: #DBE3E1;
+  --fg-color-1: #aab4b6;
   --header-size: 121px;
   --aside-size: 274px;
 }
 
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-regular);
+  font-size: 16px;
+}
+
 body {
-  font-family: var(--font-family);
   padding-top: var(--header-size);
   padding-left: var(--aside-size);
   margin: 0;
+}
+
+img {
+  display: block;
 }
 
 .header {
@@ -27,6 +44,46 @@ body {
   align-items: center;
   padding: 40px 40px 39px;
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--font-black);
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toolbar>button {
+  background: none;
+  border: none;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar-wrapper {
+  width: 34px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--bg-color-4);
+}
+
+.avatar[src=''] {
+  display: none;
 }
 
 .navbar {
@@ -45,6 +102,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  font-size: 14px;
 }
 
 .navlist li {
@@ -61,6 +119,14 @@ body {
 
 .navlist li.active {
   background-color: var(--bg-color-2);
+  color: #ffffff;
+}
+
+.log-out {
+  border: none;
+  background: none;
+  place-self: start;
+  color: var(--fg-color-1);
 }
 
 main {
@@ -82,6 +148,23 @@ main header {
   padding: 56px 54px 100px 66px;
 }
 
+.projects-container header {
+  margin-bottom: 28px;
+}
+
+.projects-container h2 {
+  font-size: 32px;
+  font-family: var(--font-medium);
+  font-weight: 500;
+}
+
+.project-creation {
+  border: none;
+  border-radius: 24px;
+  padding: 10px 24px;
+  background-color: var(--bg-color-3);
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -91,8 +174,24 @@ main header {
   margin: 0;
 }
 
-.project { 
+.project {
   background-color: white;
   border-radius: 24px;
   padding: 32px 22px 17px 32px;
+  min-width: 508px;
+  min-height: 181px;
+}
+
+.project h3 {
+  font-family: var(--font-medium);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 110%;
+  margin-bottom: 18px;
+  max-width: 382px;
+}
+
+.project ul {
+  display: grid;
+  gap: 20px;
 }

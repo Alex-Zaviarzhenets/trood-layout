@@ -1,0 +1,13 @@
+src/
+├── App.js            
+├── index.js           
+├── components/
+│   ├── Header.js
+│   ├── Sidebar.js
+│   └── ProjectCard.js
+├── pages/
+    ├── ProjectList.js
+    ├── CreateProject.js
+    ├── EditProject.js
+    └── NotFound.js       
+        
